@@ -12,3 +12,18 @@ ul {
 ul li {
     padding: 10px;
 }
+
+#socialLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#socialLinks h3 {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#socialLinks i {
+    font-size: 82px;
+}
