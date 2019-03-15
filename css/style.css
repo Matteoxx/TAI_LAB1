@@ -20,3 +20,15 @@ body {
 footer {
     text-align: center;
 }
+
+.scroll {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
