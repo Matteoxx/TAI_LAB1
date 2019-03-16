@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mój unikalny tytuł strony</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <div class="navbar justify-content-center"></div>
+
+    <div class="container list">
+        Question: <h4 class="question"></h4>
+        Nr: <h5 class="questionNumber"></h5>
+        Answers:
+        <ul class="list-group">
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+        </ul>
+
+        <div class="buttons">
+            <button class="btn btn-danger previous">Previous</button>
+            <button class="btn btn-success next">Next</button>
+        </div>
+
+        <h4>Your score: <span class="score">0</span>/20 points.</h4>
+    </div>
+
+    <div class="container results" style="display: none">
+        <div class="btn-group-custom">
+            <button class="btn btn-success btn-custom restart">Retake quiz</button>
+        </div>
+        <div class="score">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Point/20</th>
+                    <th>Average</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Your score</th>
+                    <td class="userScorePoint"></td>
+                    <td class="average"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="scroll">
+            <button class="btn btn-success">
+                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Do góry
+            </button>
+        </div>
+    </div>
+
+
+
+    <footer>Copyrights © Mateusz Niziołek | 2019 </footer>
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -25,10 +25,25 @@ footer {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    display: none;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.correct {
+    background-color: forestgreen;
+    color: aliceblue;
+}
+
+.incorrect {
+    background-color: crimson;
+    color: aliceblue;
+}
+
+.list-group-item {
+    cursor: pointer;
 }
 
 
