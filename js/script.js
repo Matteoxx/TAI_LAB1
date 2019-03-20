@@ -1,3 +1,5 @@
+// localStorage.removeItem("quizScore");
+// console.log(localStorage.getItem("quizScore"));
 let next = document.querySelector('.next');
 let previous = document.querySelector('.previous');
 let question = document.querySelector('.question');
@@ -125,18 +127,20 @@ function clearClass() {
 function saveResult() {
 
     if (localStorage.getItem("quizScore") != null) {
-        let poprzWynik = JSON.parse(localStorage.getItem("quizScore"));
-        let nowyWynik = {
-            "avgScore": (poprzWynik.avgScore + points) / (poprzWynik.numberOfGames + 1),
+        let previewScore = JSON.parse(localStorage.getItem("quizScore"));
+        let newScore = {
+            "totalPoints": previewScore.totalPoints + points,
+            "avgScore": (JSON.parse(localStorage.getItem("quizScore")).totalPoints + points) / (previewScore.numberOfGames + 1),
             "numberOfGames": JSON.parse(localStorage.getItem("quizScore")).numberOfGames + 1
         };
-        localStorage.setItem("quizScore", JSON.stringify(nowyWynik));
+        localStorage.setItem("quizScore", JSON.stringify(newScore));
     } else {
-        let nowyWynik = {
+        let newScore = {
+            "totalPoints": points,
             "avgScore": points,
             "numberOfGames": 1
         };
-        localStorage.setItem("quizScore", JSON.stringify(nowyWynik));
+        localStorage.setItem("quizScore", JSON.stringify(newScore));
     }
     averageScore.innerText = JSON.parse(localStorage.getItem("quizScore")).avgScore;
 
